@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session5</title>
+</head>
+<body>
+    <script>
+
+//Arithematic operators 
+
+// Addition (+): Adds two operands together.
+Example: let sum = 5 + 3; // sum will be 8
+
+// Subtraction (-): Subtracts the second operand from the first operand.
+Example: let difference = 10 - 4; // difference will be 6
+
+// Multiplication (*): Multiplies two operands.
+Example: let product = 2 * 6; // product will be 12
+
+// Division (/): Divides the first operand by the second operand.
+Example: let quotient = 10 / 2; // quotient will be 5
+
+// Remainder/Modulo (%): Returns the remainder when the first operand is divided by the second operand.
+Example: let remainder = 10 % 3; // remainder will be 1
+
+// Increment (++) and Decrement (--): Increase or decrease the value of a variable by 1 respectively.
+let num = 5;
+num++; // num will be 6
+num--; 
+
+// --------------------------------------------------------------------
+
+
+//logical operators
+
+// 1) Logical AND (&&): Returns true if both operands are true, otherwise returns false.
+let a = true;
+let b = false;
+let result = a && b;
+
+// 2) Logical OR (||): Returns true if at least one of the operands is true, otherwise returns false.
+
+let ab = true;
+let bb = false;
+let results = ab || bb;
+
+//3) Logical NOT (!): Returns the opposite boolean value of the operand. If the operand is true, it returns false, and if the operand is false, it returns true.
+let ac = true;
+let resultss = !ac;
+
+
+// ------------------------------------------------------------------------------
+
+// Loops
+
+// 1)for loop
+for (let i = 0; i < 6; i++) {
+  console.log(i); // prints numbers from 0 to 4
+}
+
+//2)while loop
+let k = 0;
+while (k < 5) {
+  console.log(k); // prints numbers from 0 to 4
+  k++;
+}
+
+//3)do while
+let j = 0;
+do {
+  console.log(j); // prints numbers from 0 to 4
+  j++;
+} while (i < 5);
+
+
+//4 for-in loop
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+for (let key in person) {
+  console.log(key + ': ' + person[key]);
+}
+
+//5 for-of loops
+const fruits = ['apple', 'banana', 'orange'];
+
+for (let fruit of fruits) {
+  console.log(fruit); // prints each fruit in the array
+}
+
+
+//------------------------------------------------------------------------
+
+// switch case
+let day = 3;
+let dayName;
+
+switch (day) {
+  case 1:
+    dayName = 'Monday';
+    break;
+  case 2:
+    dayName = 'Tuesday';
+    break;
+  case 3:
+    dayName = 'Wednesday';
+    break;
+  case 4:
+    dayName = 'Thursday';
+    break;
+  case 5:
+    dayName = 'Friday';
+    break;
+  case 6:
+    dayName = 'Saturday';
+    break;
+  case 7:
+    dayName = 'Sunday';
+    break;
+  default:
+    dayName = 'Invalid day';
+}
+
+console.log(dayName); // prints 'Wednesday'
+
+//-----------------------------------------------------------------------
+
+// how to access values in objects and arrays
+
+//objects
+console.log(person.name)
+console.log(person['name'])
+
+//arrays
+const heello = ['apple','bannana','orange']
+console.log(heello[0])
+
+
+// es6 and es7
+
+//variable declaration in es6
+const ji= "sddh";
+let hui="ksjkd"
+hui="klsddlks"
+
+//old code
+const somename = function (){
+    console.log("im in a some one function")
+}
+
+// es6
+// arrow functions
+const somenames = () =>{
+    console.log("im in a some one function")
+}
+
+const multiply =(a,b)=>{
+    return a*b;
+}
+
+const Multiplies =(a,b) => a*b
+// multiply(5,6)
+
+//spread operators
+const extrafruits=[...fruits,'grapes']
+
+const user={
+    name:"hari"
+}
+
+const extradetails ={
+    ...user,
+    age:30
+}
+    </script>
+</body>
+</html>
