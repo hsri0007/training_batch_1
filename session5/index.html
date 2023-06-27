@@ -135,10 +135,18 @@ console.log(dayName); // prints 'Wednesday'
 console.log(person.name)
 console.log(person['name'])
 
+//objects destructing
+
+const {name} = person
+console.log(name)
+
 //arrays
 const heello = ['apple','bannana','orange']
 console.log(heello[0])
 
+//array destructing
+const [sss]=heello 
+console.log(sss)
 
 // es6 and es7
 
@@ -161,6 +169,9 @@ const somenames = () =>{
 const multiply =(a,b)=>{
     return a*b;
 }
+
+// anonymous function or callback function
+()=>{}
 
 const Multiplies =(a,b) => a*b
 // multiply(5,6)

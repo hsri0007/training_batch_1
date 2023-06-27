@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+// url
+// https://codesandbox.io
+
+// -----------------------------------------------------------
+// js function
+// const App =()=>{
+//     return 5
+// }
+
+//react component
+// const ReactApp =()=>{
+//     return (
+//         <div>
+//             hello
+//         </div>
+//     )
+// }
+
+
+//Hoc Array loops
+
+//forEach
+// Map
+// reduce
+
+
+//map Array loop method
+const helo =[
+    "vivek",
+    "hari",
+    "wereuiop",
+    "yashwanth",
+    "lokesh"
+  ]
+
+  helo.map((name)=>name)
+
+
+  //react basic code with state and connecting to api
+
+import { useEffect, useState } from "react";
+
+const App = () => {
+  const [state, setState] = useState([]);
+
+  const [user, setUser] = useState("");
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((data) => setState(data));
+  }, []);
+
+  return (
+    <div>
+      {state.map((name) => (
+        <button
+          onClick={() => {
+            setUser(name.name);
+          }}
+        >
+          {name.name}
+        </button>
+      ))}
+      <h1>{user}</h1>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+    </script>
+    
+</body>
+</html>
